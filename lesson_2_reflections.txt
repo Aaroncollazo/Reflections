@@ -6,3 +6,23 @@ You need to do this to start creating commits and using git for version control
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 The staging area lets you seperate files from your repository to commit, and the working directory is all of the files in the repository. Alone the staging area does nothing you need to put files into it to commit.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+By using git status you can view what files in your repository are not commited. You can then use git add to add files you would like to be commited. Then git commit lets you commit files that are in the staging area and give them a message describing why they are being commited.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Branches allow you to completely change the progress of your project without losing the main ideas. The example of making an easy mode for a games works.
+
+How do the diagrams help you visualize the branch structure?
+
+Understanding reachability may be difficult without the diagrams. The tree structure explains how git log works, and drives home the detached head error explaining how some commits could be lost.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches creates a commit with all of other commits in the new commit basically deleteing the branch that is not master, but adding the files to master. The diagram basically uses pointers to describe how the merge works
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Gits merge streamlines the process of combining ideas by pointing to the changes between files with additions in the code. Manual merging would probably be tedious if you don't know exactly what is changing.
